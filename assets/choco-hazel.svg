@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c99b62"/><stop offset="1" stop-color="#f8f1e8"/></linearGradient>
+ <linearGradient id="cake" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6b3d2e"/><stop offset="1" stop-color="#42241d"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="600" height="500" rx="36" fill="url(#bg)"/>
+<ellipse cx="300" cy="418" rx="150" ry="24" fill="#332622" opacity=".14" filter="url(#shadow)"/>
+<!-- frosting -->
+<path d="M175 290 C170 250 205 230 230 224 C220 190 258 164 292 178 C302 143 354 145 365 181 C403 167 437 202 420 233 C454 246 449 290 422 304 C375 329 222 331 175 290Z" fill="#6b3d2e"/>
+<path d="M215 272 C232 242 265 246 285 256 C301 217 350 218 365 256 C390 244 412 263 417 283" fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="10" stroke-linecap="round"/>
+<!-- wrapper -->
+<path d="M185 286 L415 286 L385 410 Q300 440 215 410Z" fill="url(#cake)"/>
+<path d="M210 300 L230 403 M250 298 L265 420 M292 298 L300 425 M335 298 L330 420 M375 298 L355 405" stroke="#fff" stroke-opacity=".18" stroke-width="8"/>
+<circle cx="300" cy="195" r="34" fill="#fff" opacity=".28"/>
+<text x="300" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="48">🌰</text>
+<text x="300" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#332622" opacity=".72">Choco Hazel</text>
+</svg>
