@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Dark Choco",
+    "description": "Rich dark chocolate cupcake",
+    "price": 15000
+  },
+  {
+    "name": "Mocha Pop",
+    "description": "Espresso and chocolate",
+    "price": 16000
+  },
+  {
+    "name": "Choco Hazel",
+    "description": "Chocolate and hazelnut",
+    "price": 17000
+  },
+  {
+    "name": "Salted Caramel",
+    "description": "Sweet caramel with sea salt",
+    "price": 18000
+  },
+  {
+    "name": "Kopi Aren",
+    "description": "Coffee milk and palm sugar",
+    "price": 19000
+  },
+  {
+    "name": "Chai Spice",
+    "description": "Chocolate with warm chai spices",
+    "price": 20000
+  },
+  {
+    "name": "Berry Sweet",
+    "description": "Fresh sweet strawberry",
+    "price": 21000
+  },
+  {
+    "name": "Mango Chill",
+    "description": "Fresh tropical mango",
+    "price": 22000
+  },
+  {
+    "name": "Yuzu Lemon",
+    "description": "Bright yuzu and lemon",
+    "price": 23000
+  },
+  {
+    "name": "Peach Kiss",
+    "description": "Soft sweet peach",
+    "price": 24000
+  },
+  {
+    "name": "Lychee Blush",
+    "description": "Sweet fragrant lychee",
+    "price": 25000
+  },
+  {
+    "name": "Berry Basil",
+    "description": "Strawberry with fresh basil",
+    "price": 26000
+  },
+  {
+    "name": "Pandan Wangi",
+    "description": "Pandan with toasted coconut",
+    "price": 27000
+  },
+  {
+    "name": "Ketan Hitam",
+    "description": "Sweet black sticky rice",
+    "price": 28000
+  },
+  {
+    "name": "Rasa Klepon",
+    "description": "Pandan with palm sugar filling",
+    "price": 29000
+  },
+  {
+    "name": "Es Teler",
+    "description": "Jackfruit, avocado and coconut",
+    "price": 30000
+  },
+  {
+    "name": "Lapis Rempah",
+    "description": "Warm layered spice",
+    "price": 20000
+  },
+  {
+    "name": "Gula Aren",
+    "description": "Rich local palm sugar",
+    "price": 22000
+  },
+  {
+    "name": "Matcha Green",
+    "description": "Japanese green tea",
+    "price": 24000
+  },
+  {
+    "name": "Earl Grey",
+    "description": "Classic bergamot tea",
+    "price": 26000
+  },
+  {
+    "name": "Teh Melati",
+    "description": "Fragrant jasmine tea",
+    "price": 28000
+  },
+  {
+    "name": "Sweet Rose",
+    "description": "Soft sweet rose",
+    "price": 30000
+  },
+  {
+    "name": "Honey Camomile",
+    "description": "Chamomile and honey",
+    "price": 25000
+  },
+  {
+    "name": "Vanilla Honey",
+    "description": "Soft vanilla and pure honey",
+    "price": 18000
+  }
+]

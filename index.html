@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amore Cupcakes — handcrafted cupcakes made with love.">
+  <title>Amore — Cupcakes Made With Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-cupcake">🧁</div>
+      <div class="loader-logo">amore</div>
+      <div class="loader-line"></div>
+      <p>baked with love</p>
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <header class="navbar">
+    <a href="#home" class="brand magnetic">amore<span>.</span></a>
+    <nav>
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#about" data-i18n="navStory">Our Story</a>
+      <a href="#menu" data-i18n="navMenu">Menu</a>
+      <a href="#gallery" data-i18n="navGallery">Gallery</a>
+      <a href="#order" data-i18n="navOrderShort">Order</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="language-switcher" aria-label="Language selector"><button class="lang-btn active" data-lang="en">EN</button><span>/</span><button class="lang-btn" data-lang="id">ID</button></div><a href="#order" class="nav-cta magnetic" data-i18n="navOrder">Order cupcakes</a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg parallax" data-speed="0.14"></div>
+      <div class="floating floating-one">✦</div>
+      <div class="floating floating-two">♡</div>
+      <div class="floating floating-three">✿</div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">handcrafted in small batches</p>
+        <h1 class="hero-title reveal">a little<br><em>piece of amore.</em></h1>
+        <p class="hero-copy reveal"><span id="typedText"></span><span class="typing-cursor">|</span></p>
+        <div class="hero-actions reveal">
+          <a href="#menu" class="button primary magnetic">Explore the menu</a>
+          <a href="#about" class="button ghost magnetic">Our story ↗</a>
+        </div>
+      </div>
+      <div class="hero-cupcake parallax" data-speed="-0.08">
+        <div class="cupcake-shadow"></div>
+        <div id="threeCupcake" aria-label="3D cupcake animation"></div>
+        <div class="cupcake-emoji fallback-cupcake">🧁</div>
+      </div>
+      <div class="scroll-hint">scroll to discover <span>↓</span></div>
+    </section>
+
+    <section id="about" class="story section">
+      <div class="section-grid">
+        <div class="story-visual reveal">
+          <div class="polaroid tilt-card">
+            <div class="fake-photo"><img src="assets/berry-sweet.jpg" alt="Freshly baked cupcake" loading="lazy"></div>
+            <p>made with love, always.</p>
+          </div>
+          <div class="stamp">AMORE<br><small>since 2026</small></div>
+        </div>
+        <div class="story-text">
+          <p class="eyebrow reveal">our little story</p>
+          <h2 class="section-title reveal">sweet things are<br><em>better shared.</em></h2>
+          <p class="reveal">Amore started with a simple idea: make cupcakes that feel like receiving a tiny love letter. Every batch is mixed, baked, frosted and finished by hand.</p>
+          <p class="reveal">From quiet study dates to birthday surprises, our cupcakes are made for the moments you want to remember.</p>
+          <div class="signature reveal">with love, <strong>amore</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow reveal">the menu</p>
+          <h2 class="section-title reveal">pick your <em>favorite.</em></h2>
+        </div>
+        <p class="section-note reveal">freshly baked • small batches • lots of love</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card tilt-card reveal" data-name="Dark Choco" data-price="15000">
+          <div class="card-art photo-art">
+            <img src="assets/dark-choco.jpg" alt="Dark Choco cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>01</span><h3>Dark Choco</h3><p>Rich dark chocolate cupcake</p><strong>Rp 15.000</strong>
+            <button class="add-btn" aria-label="Add Dark Choco">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Mocha Pop" data-price="16000">
+          <div class="card-art photo-art">
+            <img src="assets/mocha-pop.jpg" alt="Mocha Pop cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>02</span><h3>Mocha Pop</h3><p>Espresso and chocolate</p><strong>Rp 16.000</strong>
+            <button class="add-btn" aria-label="Add Mocha Pop">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Choco Hazel" data-price="17000">
+          <div class="card-art photo-art">
+            <img src="assets/choco-hazel.jpg" alt="Choco Hazel cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>03</span><h3>Choco Hazel</h3><p>Chocolate and hazelnut</p><strong>Rp 17.000</strong>
+            <button class="add-btn" aria-label="Add Choco Hazel">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Salted Caramel" data-price="18000">
+          <div class="card-art photo-art">
+            <img src="assets/salted-caramel.jpg" alt="Salted Caramel cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>04</span><h3>Salted Caramel</h3><p>Sweet caramel with sea salt</p><strong>Rp 18.000</strong>
+            <button class="add-btn" aria-label="Add Salted Caramel">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Kopi Aren" data-price="19000">
+          <div class="card-art photo-art">
+            <img src="assets/kopi-aren.jpg" alt="Kopi Aren cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>05</span><h3>Kopi Aren</h3><p>Coffee milk and palm sugar</p><strong>Rp 19.000</strong>
+            <button class="add-btn" aria-label="Add Kopi Aren">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Chai Spice" data-price="20000">
+          <div class="card-art photo-art">
+            <img src="assets/chai-spice.jpg" alt="Chai Spice cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>06</span><h3>Chai Spice</h3><p>Chocolate with warm chai spices</p><strong>Rp 20.000</strong>
+            <button class="add-btn" aria-label="Add Chai Spice">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Berry Sweet" data-price="21000">
+          <div class="card-art photo-art">
+            <img src="assets/berry-sweet.jpg" alt="Berry Sweet cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>07</span><h3>Berry Sweet</h3><p>Fresh sweet strawberry</p><strong>Rp 21.000</strong>
+            <button class="add-btn" aria-label="Add Berry Sweet">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Mango Chill" data-price="22000">
+          <div class="card-art photo-art">
+            <img src="assets/mango-chill.jpg" alt="Mango Chill cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>08</span><h3>Mango Chill</h3><p>Fresh tropical mango</p><strong>Rp 22.000</strong>
+            <button class="add-btn" aria-label="Add Mango Chill">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Yuzu Lemon" data-price="23000">
+          <div class="card-art photo-art">
+            <img src="assets/yuzu-lemon.jpg" alt="Yuzu Lemon cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>09</span><h3>Yuzu Lemon</h3><p>Bright yuzu and lemon</p><strong>Rp 23.000</strong>
+            <button class="add-btn" aria-label="Add Yuzu Lemon">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Peach Kiss" data-price="24000">
+          <div class="card-art photo-art">
+            <img src="assets/peach-kiss.jpg" alt="Peach Kiss cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>10</span><h3>Peach Kiss</h3><p>Soft sweet peach</p><strong>Rp 24.000</strong>
+            <button class="add-btn" aria-label="Add Peach Kiss">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Lychee Blush" data-price="25000">
+          <div class="card-art photo-art">
+            <img src="assets/lychee-blush.jpg" alt="Lychee Blush cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>11</span><h3>Lychee Blush</h3><p>Sweet fragrant lychee</p><strong>Rp 25.000</strong>
+            <button class="add-btn" aria-label="Add Lychee Blush">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Berry Basil" data-price="26000">
+          <div class="card-art photo-art">
+            <img src="assets/berry-basil.jpg" alt="Berry Basil cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>12</span><h3>Berry Basil</h3><p>Strawberry with fresh basil</p><strong>Rp 26.000</strong>
+            <button class="add-btn" aria-label="Add Berry Basil">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Pandan Wangi" data-price="27000">
+          <div class="card-art photo-art">
+            <img src="assets/pandan-wangi.jpg" alt="Pandan Wangi cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>13</span><h3>Pandan Wangi</h3><p>Pandan with toasted coconut</p><strong>Rp 27.000</strong>
+            <button class="add-btn" aria-label="Add Pandan Wangi">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Ketan Hitam" data-price="28000">
+          <div class="card-art photo-art">
+            <img src="assets/ketan-hitam.jpg" alt="Ketan Hitam cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>14</span><h3>Ketan Hitam</h3><p>Sweet black sticky rice</p><strong>Rp 28.000</strong>
+            <button class="add-btn" aria-label="Add Ketan Hitam">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Rasa Klepon" data-price="29000">
+          <div class="card-art photo-art">
+            <img src="assets/rasa-klepon.jpg" alt="Rasa Klepon cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>15</span><h3>Rasa Klepon</h3><p>Pandan with palm sugar filling</p><strong>Rp 29.000</strong>
+            <button class="add-btn" aria-label="Add Rasa Klepon">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Es Teler" data-price="30000">
+          <div class="card-art photo-art">
+            <img src="assets/es-teler.jpg" alt="Es Teler cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>16</span><h3>Es Teler</h3><p>Jackfruit, avocado and coconut</p><strong>Rp 30.000</strong>
+            <button class="add-btn" aria-label="Add Es Teler">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Lapis Rempah" data-price="20000">
+          <div class="card-art photo-art">
+            <img src="assets/lapis-rempah.jpg" alt="Lapis Rempah cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>17</span><h3>Lapis Rempah</h3><p>Warm layered spice</p><strong>Rp 20.000</strong>
+            <button class="add-btn" aria-label="Add Lapis Rempah">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Gula Aren" data-price="22000">
+          <div class="card-art photo-art">
+            <img src="assets/gula-aren.jpg" alt="Gula Aren cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>18</span><h3>Gula Aren</h3><p>Rich local palm sugar</p><strong>Rp 22.000</strong>
+            <button class="add-btn" aria-label="Add Gula Aren">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Matcha Green" data-price="24000">
+          <div class="card-art photo-art">
+            <img src="assets/matcha-green.jpg" alt="Matcha Green cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>19</span><h3>Matcha Green</h3><p>Japanese green tea</p><strong>Rp 24.000</strong>
+            <button class="add-btn" aria-label="Add Matcha Green">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Earl Grey" data-price="26000">
+          <div class="card-art photo-art">
+            <img src="assets/earl-grey.jpg" alt="Earl Grey cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>20</span><h3>Earl Grey</h3><p>Classic bergamot tea</p><strong>Rp 26.000</strong>
+            <button class="add-btn" aria-label="Add Earl Grey">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Teh Melati" data-price="28000">
+          <div class="card-art photo-art">
+            <img src="assets/teh-melati.jpg" alt="Teh Melati cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>21</span><h3>Teh Melati</h3><p>Fragrant jasmine tea</p><strong>Rp 28.000</strong>
+            <button class="add-btn" aria-label="Add Teh Melati">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Sweet Rose" data-price="30000">
+          <div class="card-art photo-art">
+            <img src="assets/sweet-rose.jpg" alt="Sweet Rose cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>22</span><h3>Sweet Rose</h3><p>Soft sweet rose</p><strong>Rp 30.000</strong>
+            <button class="add-btn" aria-label="Add Sweet Rose">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Honey Camomile" data-price="25000">
+          <div class="card-art photo-art">
+            <img src="assets/honey-camomile.jpg" alt="Honey Camomile cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>23</span><h3>Honey Camomile</h3><p>Chamomile and honey</p><strong>Rp 25.000</strong>
+            <button class="add-btn" aria-label="Add Honey Camomile">＋ add</button>
+          </div>
+        </article>
+        <article class="menu-card tilt-card reveal" data-name="Vanilla Honey" data-price="18000">
+          <div class="card-art photo-art">
+            <img src="assets/vanilla-honey.jpg" alt="Vanilla Honey cupcake" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span>24</span><h3>Vanilla Honey</h3><p>Soft vanilla and pure honey</p><strong>Rp 18.000</strong>
+            <button class="add-btn" aria-label="Add Vanilla Honey">＋ add</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="marquee-section">
+      <div class="marquee"><span>BAKED WITH LOVE · MADE FOR SHARING · A LITTLE SWEETNESS GOES A LONG WAY · </span><span>BAKED WITH LOVE · MADE FOR SHARING · A LITTLE SWEETNESS GOES A LONG WAY · </span></div>
+    </section>
+
+    <section id="gallery" class="gallery section">
+      <div class="section-heading">
+        <div><p class="eyebrow reveal">a glimpse of amore</p><h2 class="section-title reveal">sweet moments, <em>sweet memories.</em></h2></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall reveal"><span>🧁</span><p>the classics</p></div>
+        <div class="gallery-item reveal"><span>🍓</span><p>berry days</p></div>
+        <div class="gallery-item wide reveal"><span>🎀</span><p>made for your moments</p></div>
+        <div class="gallery-item reveal"><span>🌷</span><p>little details</p></div>
+        <div class="gallery-item tall reveal"><span>🍫</span><p>chocolate always</p></div>
+      </div>
+    </section>
+
+    <section class="experience section">
+      <div class="experience-inner">
+        <p class="eyebrow reveal">why amore?</p>
+        <h2 class="section-title reveal">because the best<br><em>memories taste sweet.</em></h2>
+        <div class="features">
+          <div class="feature reveal"><b>01</b><h3>freshly baked</h3><p>Small batches, baked fresh so every bite stays soft and delicious.</p></div>
+          <div class="feature reveal"><b>02</b><h3>made to order</h3><p>Choose your flavors, quantity and message for special occasions.</p></div>
+          <div class="feature reveal"><b>03</b><h3>packed with care</h3><p>Pretty packaging designed to make the unboxing part of the moment.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="order section">
+      <div class="order-copy">
+        <p class="eyebrow reveal">your box awaits</p>
+        <h2 class="section-title reveal">let's make<br>something <em>sweet.</em></h2>
+        <p class="reveal">Fill in the form and we'll prepare your little box of happiness.</p>
+        <div class="order-badge reveal">🧁 <span>custom orders welcome</span></div>
+      </div>
+      <form id="orderForm" class="order-form reveal">
+        <label>Name<input required id="customerName" type="text" placeholder="your name"></label>
+        <label>WhatsApp<input required id="phone" type="tel" placeholder="08xxxxxxxxxx"></label>
+        <label>Email<input id="email" type="email" placeholder="you@email.com"></label>
+        <label data-i18n="chooseLabel">Choose cupcakes
+<select id="flavor"><option value="">select a flavor</option></select></label>
+        <label>Quantity<input required id="quantity" type="number" min="1" max="100" value="1"></label>
+        <div class="order-total-box full" aria-live="polite">
+          <span data-i18n="currentTotalLabel">Current total</span>
+          <strong id="currentTotal">Rp 0</strong>
+        </div>
+        <label>Pickup / delivery date<input required id="date" type="date"></label>
+        <label>Message<textarea id="message" rows="4" placeholder="any special request?"></textarea></label>
+        <button class="button primary full magnetic" type="submit" data-i18n="submit">Place order</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="contact-card">
+        <p class="eyebrow reveal">come say hi</p>
+        <h2 class="section-title reveal">find us, <em>find amore.</em></h2>
+        <div class="contact-grid">
+          <div class="reveal"><span>📍 studio</span><strong>Bandung, West Java</strong><p>Pre-order & pickup by appointment.</p></div>
+          <div class="reveal"><span>💌 email</span><strong>hello@amorecupcakes.id</strong><p>We usually reply within 1 business day.</p></div>
+          <div class="reveal"><span>♡ instagram</span><strong>@amore.cupcakes</strong><p>Behind the scenes & new flavors.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="brand">amore<span>.</span></div><p>made with love, one cupcake at a time.</p><span>© 2026 amore</span></footer>
+
+  <div class="toast" id="toast">Added to your sweet box ♡</div>
+  <div class="cart-pill" id="cartPill">🧁 <span id="cartCount">0</span> cupcakes</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
